@@ -1,0 +1,12 @@
+﻿table,variable
+Average number of hours spent on unpaid domestic and care work  by sex,hrs_unpaid_dom_care_work
+Average number of hours spent on paid and unpaid domestic and care work combined (total work burden)  by sex,hrs_dom_care_work
+Labour force participation rate for persons aged 15-24  by sex,labor_force
+Proportion of employed who are own-account workers  by sex,prop_self_employed
+Proportion of employed who are contributing family workers  by sex,prop_family_worker
+Proportion of employed who are employers  by sex,prop_employers
+Percentage distribution of employed population in industrial sector  by sex,perc_industrial
+Percentage distribution of employed population in service sector  by sex,perc_service
+Proportion of individuals using the Internet  by sex,prop_internet
+Proportion of seats held by women in national parliament,prop_nat_parl
+Share of female judges,prop_female_judge
