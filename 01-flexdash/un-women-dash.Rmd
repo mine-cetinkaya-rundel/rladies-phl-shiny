@@ -16,7 +16,7 @@ library(DT)
 ```
 
 ```{r load-data, include = FALSE}
-unwomen <- read_csv("../../data/un-women/un-women.csv") %>% 
+unwomen <- read_csv("data/un-women.csv") %>% 
   dplyr::filter(
     !is.na(region),
     sex == "Female"
@@ -205,6 +205,8 @@ ylab <- reactive({
     input$y == "prop_female_judge"        ~ "Proportion of female judges"
   )
 })
+
+br()
 ```
 
 **Note:** Only data from the most recent year for your selected variables will 
