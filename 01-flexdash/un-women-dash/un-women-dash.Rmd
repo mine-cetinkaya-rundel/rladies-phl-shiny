@@ -102,7 +102,7 @@ renderGauge({
 ```{r}
 renderValueBox({
   valueBox(value = round(mean(sel_data()$prop_female_judge, na.rm = TRUE), 2), 
-           icon = "glyphicon-time")
+           icon = "glyphicon-bullhorn")
 })
 ```
 
@@ -111,7 +111,7 @@ renderValueBox({
 ```{r}
 renderValueBox({
   valueBox(value = round(mean(sel_data()$prop_nat_parl, na.rm = TRUE), 2), 
-           icon = "glyphicon-time")
+           icon = "glyphicon-thumbs-down")
 })
 ```
 
