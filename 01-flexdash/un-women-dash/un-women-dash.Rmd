@@ -4,7 +4,7 @@ output:
   flexdashboard::flex_dashboard:
     orientation: rows
     social: menu
-    source_code: https://github.com/rstudio-education/shiny-rmed18/blob/master/01-flexdash/nhanesdash.Rmd
+    source_code: https://github.com/mine-cetinkaya-rundel/rladies-phl-shiny/blob/master/01-flexdash/un-women-dash/un-women-dash.Rmd
 runtime: shiny
 ---
 
