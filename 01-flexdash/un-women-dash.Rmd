@@ -1,10 +1,10 @@
 ---
-title: "UN Women Stats Explorer"
+title: "UN Gender Stats Explorer"
 output: 
   flexdashboard::flex_dashboard:
     orientation: rows
     social: menu
-    source_code: https://github.com/mine-cetinkaya-rundel/rladies-phl-shiny/blob/master/01-flexdash/un-women-dash/un-women-dash.Rmd
+    source_code: https://github.com/mine-cetinkaya-rundel/rladies-phl-shiny/blob/master/01-flexdash/un-women-dash.Rmd
 runtime: shiny
 ---
 
@@ -34,7 +34,7 @@ regions   <- unwomen %>% distinct(region) %>% arrange(region) %>% pull(region)
 Sidebar {.sidebar}
 =======================================================================
 
-### UN Women Data
+### UN Gender Stats Data
 
 Filter the data for characteristics you're interested in exploring:
 
@@ -131,7 +131,7 @@ selectInput(
       = "hrs_unpaid_dom_care_work",
     "Average number of hours spent on paid and unpaid domestic and care work combined"
       = "hrs_dom_care_work",
-    "Labour force participation rate for persons aged 15-24" = "labor_force",
+    "Labour force participation rate" = "labor_force",
     "Proportion of employed who are self-employed" = "prop_self_employed",
     "Proportion of employed who are contributing family workers" = "prop_family_worker",
     "Proportion of employed who are employers" = "prop_employers",
@@ -151,7 +151,7 @@ selectInput(
       = "hrs_unpaid_dom_care_work",
     "Average number of hours spent on paid and unpaid domestic and care work combined"
       = "hrs_dom_care_work",
-    "Labour force participation rate for persons aged 15-24" = "labor_force",
+    "Labour force participation rate" = "labor_force",
     "Proportion of employed who are self-employed" = "prop_self_employed",
     "Proportion of employed who are contributing family workers" = "prop_family_worker",
     "Proportion of employed who are employers" = "prop_employers",
@@ -171,7 +171,7 @@ xlab <- reactive({
     input$x == "hrs_dom_care_work"        ~  
       "Average number of hours spent on paid and unpaid domestic and care work combined",
     input$x == "labor_force"              ~ 
-      "Labour force participation rate for persons aged 15-24",
+      "Labour force participation rate, ages 15-24",
     input$x == "prop_self_employed"       ~ "Proportion of employed who are self-employed",
     input$x == "prop_family_worker"       ~ 
       "Proportion of employed who are contributing family workers",
@@ -192,7 +192,7 @@ ylab <- reactive({
     input$y == "hrs_dom_care_work"        ~  
       "Average number of hours spent on paid and unpaid domestic and care work combined",
     input$y == "labor_force"              ~ 
-      "Labour force participation rate for persons aged 15-24",
+      "Labour force participation rate, ages 15-24",
     input$y == "prop_self_employed"       ~ "Proportion of employed who are self-employed",
     input$y == "prop_family_worker"       ~ 
       "Proportion of employed who are contributing family workers",
